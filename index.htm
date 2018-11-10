@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" manifest="dict.manifest">
+<head>
+<title>Dictutorial</title>
+<meta charset="utf-8">
+<meta name="description" content="Dictating tutor for you to learn and practice listening, typing and speaking native and foreign language sentences">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dict.css">
+</head>
+
+<body>
+<h1>Dictutorial</h1>
+<div id="books">
+	<div id="container0" class="single">
+		<div id="title0"></div>
+		<div id="book0" class="highlight"></div>
+	</div>
+	<div id="container1" class="single">
+		<div id="title1"></div>
+		<div id="book1" class="highlight"></div>
+	</div>
+</div>
+<div id="typeDiv"><textarea id="entry" class="single" spellcheck="false" placeholder="Type what you hear" disabled></textarea></div>
+<div id="buttons"><button id="btnStart">Start</button><button id="btnPause">Pause</button><button id="btnRepeat">Repeat</button><a href="help.htm" target="_blank">?</a></div>
+<div id="options">
+	<div id="contents">
+		<div><label title="The voice used when reading the first book">Voice 1: <select></select></label><label title="The voice used for the second book when the Bilingual option is selected"> 2: <select></select></label></div>
+		<div id="mode">Mode: <label title="You must type the words you hear"><input type="radio" name="mode" checked value="dictation">Dictation</label><label title="Listen to and follow the spoken text"><input type="radio" name="mode" value="reading">Reading</label></div>
+		<div id="checkboxes"><label><input type="checkbox" id="chkHighlight" title="Highlight in the text the word(s) being spoken" checked>Highlight</label><label id="lblAccent" title="The words you type must have the correct accented characters"><input type="checkbox" id="chkAccent">Require accents</label><label id="lblHideText" title="Hide the text so you cannot refer to it when typing"><input type="checkbox" id="chkHideText">Hide text</label></div>
+		<div id="speak">Advance by: <label title="Read out the text a word at a time"><input type="radio" name="progress" value="word">Word</label><label title="Speak the text a phrase at a time"><input type="radio" name="progress" value="phrase">Phrase</label><label title="Read in whole sentences"><input type="radio" name="progress" value="sentence">Sentence</label><label title="Open a second book, allowing side-by-side reading of the same text in two languages"><input type="radio" name="progress" value="bilingual" checked>Bilingual</label></div>
+	</div>
+	<h4 onclick="var options=document.getElementById('options'); options.style.top=(options.style.top=='0px') ? '-160px' : '0px';">Options</h4>
+</div>
+<script async src="dict.js"></script>
+</body>
+</html>

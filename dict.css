@@ -1,0 +1,121 @@
+@media all and (min-width:901px) {
+	.dual { width: 405px; }
+	.single { width: 735px; }
+}
+@media all and (max-width:900px) {
+	.dual  { width: 45vw; }
+	.single { width: calc(75vw + 60px); }
+}
+.dual#container1 { display: inline-block; }
+.single#container1 { display: none; }
+body {
+	font-family: arial, sans-serif;
+	background-color: beige;
+	font-size: 14px;
+	overflow: auto;
+}
+
+h1, #buttons, #typeDiv, #books  {
+	text-align: center;
+}
+h1 {
+	font-family: times;
+	letter-spacing: 5px;
+}	
+.hidden { display: none; }
+#checkboxes label {
+	margin-right: 5px;
+}
+button {
+	width: 80px;
+	height: 25px;
+	margin-right: 5px;
+	padding:0;
+}
+a {
+	-webkit-appearance: button;
+	width: 20px;
+	height: 21px;
+	padding-top: 4px;
+	text-decoration: none;
+    color: initial;
+	margin-left: 10px;
+}
+/*#mistake {
+	visibility: hidden;
+	}*/
+#container0 {
+	display: inline-block;
+}
+#container1 {
+	margin-left: 10px;
+}
+#book0, #book1 {
+	height: calc(100vh - 240px);
+	object-fit: contain;
+	overflow-y: auto;
+	border-radius: 5px;
+	box-shadow: 0 0 5px 6px #ccc;
+	margin: 5px 0 0;
+	padding: 10px;
+	font-family: arial, sans-serif;
+	text-align: left;
+	font-size: 13px;
+	color: dimgrey;
+	background-color: white;
+}
+#options {
+	position: absolute;
+	top: -160px;
+	width: 400px;
+	height: 150px;
+    transition: all 500ms ease;
+}
+#options:hover{
+    top: 0;
+}
+#contents {
+	height: 120px;
+	padding: 20px; margin: 0;
+	background-color: bisque;
+	border-radius: 5px;
+}
+#options h4 {
+	height: 20px;
+	width: 55px;
+	background-color: khaki;
+	margin: 0;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+#title0, #title1 {
+	height: 1em;
+	padding-bottom: 5px;
+}
+#title0 button, #title1 button {
+	margin-left: 10px;
+	height: 20px;
+}
+div {
+	margin-bottom: 10px;
+}
+.highlight span {
+	background-color: yellow;
+}
+select {
+	height: 25px;
+	width: 140px;
+}
+cite {
+	font-style: normal;
+	color: grey;
+	-webkit-user-select: none;
+}
+input[type=file] {
+	margin-top: 5px;
+	color: transparent;
+	font-size: 9px;
+}
+input[type=file]::-webkit-file-upload-button {
+	font-size: 13px;
+}
